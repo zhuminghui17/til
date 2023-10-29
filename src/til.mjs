@@ -142,11 +142,13 @@ open all in fzf.`)
           return tmpFilename
         })
       )
-      // Optimize!
-      await exec(
-        '/Applications/ImageOptim.app/Contents/MacOS/ImageOptim ' +
-          tmpFilenames.map(tmpFilename => `"${quot(tmpFilename)}"`).join(' ')
-      )
+      // No otpimize for now, bc we on linux yeehaw
+      // // Optimize!
+      // await exec(
+      //   '/Applications/ImageOptim.app/Contents/MacOS/ImageOptim ' +
+      //     tmpFilenames.map(tmpFilename => `"${quot(tmpFilename)}"`).join(' ')
+      // )
+      
       // Create info
       mediaInfo = await Promise.all(
         tmpFilenames.map(async src => {
@@ -180,7 +182,7 @@ open all in fzf.`)
           )}"`
         )
       } else {
-        await edit(`+8 "${quot(filepath)}"`)
+        await edit(`--goto "${quot(filepath)}:8"`)
       }
     } else {
       // Ensure the entries path exists
@@ -201,12 +203,16 @@ open all in fzf.`)
         .split(/\s+/g)
         .filter(arg => allTags.has(arg))
       const entry = template({ title, permalink, date, tags }) + mediaMarkdown
-      tmpFile = await exec('mktemp')
-      await fs.writeFile(tmpFile, entry, 'utf8')
+      // tmpFile = await exec('mktemp')
+
+      await exec(`echo "${quot(entry)}" > "${quot(filepath)}"`)
+      // await fs.writeFile(tmpFile, entry, 'utf8')
       await edit(
-        `"+silent 0read ${tmpFile}" +\\$d +8 +start "${quot(filepath)}"`
+        `--goto "${quot(filepath)}:8"`
       )
     }
+  }  catch (e) {
+    console.error(e)
   } finally {
     if (tmpFile) await fs.unlink(tmpFile)
   }
