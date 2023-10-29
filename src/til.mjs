@@ -208,7 +208,7 @@ open all in fzf.`)
       await exec(`echo "${quot(entry)}" > "${quot(filepath)}"`)
       // await fs.writeFile(tmpFile, entry, 'utf8')
       await edit(
-        `--goto "${quot(filepath)}:8"`
+        `--new-window --wait --goto "${quot(filepath)}:8"`
       )
     }
   }  catch (e) {
