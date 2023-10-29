@@ -182,7 +182,7 @@ open all in fzf.`)
           )}"`
         )
       } else {
-        await edit(`--goto "${quot(filepath)}:8"`)
+        await edit(`--new-window --wait --goto "${quot(filepath)}:8"`)
       }
     } else {
       // Ensure the entries path exists
