@@ -28,6 +28,12 @@ discuss.
 - Install [NodeJS](https://nodejs.org/en/download)
 - Install fzf
   - Ubuntu: `sudo apt install fzf bat`
+- Ubuntu:
+  - `batcat -> bat symlink`: 
+```sh
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+```
 - Modify the [Config File](./config.mjs) with your own info
 - In [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), set it so you have the settings:
   - Source: Deploy from a branch (Classic Pages experience)
