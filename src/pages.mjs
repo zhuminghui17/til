@@ -184,7 +184,7 @@ function Document({ children }) {
       ),
       h('body',
         h('header',
-          h('a', { href: Config.DOMAIN_ROOT },
+          h('a', { href: Config.CANONICAL_ROOT },
             h('img', { src: useRelPath('/assets/logo.svg'), alt: Config.FULL_NAME })
           )
         ),
