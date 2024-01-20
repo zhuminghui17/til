@@ -1,13 +1,13 @@
 export const Config = (() => {
-  const firstName = "Kevin"
-  const lastName = "Jiang"
+  const firstName = "Minghui"
+  const lastName = "Zhu"
 
   const fullName = firstName + " " + lastName
-  const domainRoot = "https://kevinjiang.ca"
+  const domainRoot = "https://minghui.space"
   const canonicalRoot = domainRoot + "/til/"
-  const twitterAt = "@kevin51jiang"
+  const twitterAt = "@MinghuiZhu4"
 
-  const githubUsername = "kevin51jiang"
+  const githubUsername = "zhuminghui17"
   const githubRepo = "til"
 
   return {
