@@ -9,7 +9,7 @@ or at least interesting.
 
 ---
 
-https://leebyron.com/til
+[https://leebyron.com/til](http://til.mattzhu.net/)
 
 ---
 
