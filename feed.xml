@@ -3,7 +3,7 @@
   <id>https://til.mattzhu.net/feed.xml</id>
   <link rel="self" type="application/atom+xml" href="https://til.mattzhu.net/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://til.mattzhu.net"/>
-  <updated>2023-10-29T06:02:48.000+00:00</updated>
+  <updated>2025-05-11T02:06:28.000+00:00</updated>
   <title>Matt Zhu / til</title>
   <subtitle>
     Things I've Learned: brief blurbs on miscellaneous matter.
@@ -16,24 +16,44 @@
   <rights>© 2025 Matt Zhu ⸱ licensed under CC BY 4.0</rights>
   <generator uri="https://github.com/zhuminghui17/til">til</generator>
   <entry>
-    <id>https://til.mattzhu.net/i-made-a-til/</id>
-    <link rel="alternate" type="text/html" href="https://til.mattzhu.net/i-made-a-til/"/>
-    <published>2023-10-29T01:59:51.000-04:00</published>
-    <updated>2023-10-29T06:02:48.000+00:00</updated>
-    <title>I made a TIL</title>
+    <id>https://til.mattzhu.net/i-have-my-til/</id>
+    <link rel="alternate" type="text/html" href="https://til.mattzhu.net/i-have-my-til/"/>
+    <published>2025-05-10T10:03:51.000-04:00</published>
+    <updated>2025-05-11T02:06:28.000+00:00</updated>
+    <title>I have my TIL</title>
     <author>
       <name>Matt Zhu</name>
       <uri>https://til.mattzhu.net</uri>
     </author>
     <content type="html"><![CDATA[<p>
-  After months of lusting after my own microblogging site for posting random TILs, now I have one! I hope that this will be a way to make the constant rabbit holes I go down at least somewhat productive, even if only for other people.
+  The journey of a software engineering career has been incredibly rewarding. I’ve grown rapidly in my first year, learning new things from everywhere — online resources, ChatGPT, my boss’s feedback — every day has been full of discoveries.
 </p>
 <p>
-  I’m taking <a href="https://github.com/leebyron/til" target="_blank">Lee Byron’s template</a>, which is great for me because it’s not overly complex, and relies upon JS rather than Python.
+  I felt the need to document these little learnings, and thanks to <a href="https://github.com/leebyron/til" target="_blank">Lee Byron</a> and <a href="https://github.com/kevinforrestconnors" target="_blank">Kevin Jiang</a>’s template, I now have my own space to do just that.
 </p>
 <p>
-  I hope to actually post at last a few sentences daily from now on. Cheers!
-</p>]]></content>
-    <rights>© 2023 Matt Zhu ⸱ licensed under CC BY 4.0</rights>
+  I hope to post at least a few sentences every now and then. Cheers!
+</p>
+<h2 id="memo-for-myself">
+  <a href="#memo-for-myself" data-anchor>Memo for myself</a>
+</h2>
+<p>
+  To run this site locally:
+</p>
+<pre data-code-block data-lang="bash"><code><span data-line="1"><span style="color:#C2C3C5;"># Install dependencies</span>
+</span><span data-line="2"><span style="color:#24292EFF;">npm install</span>
+</span><span data-line="3">
+</span><span data-line="4"><span style="color:#C2C3C5;"># Build the site</span>
+</span><span data-line="5"><span style="color:#24292EFF;">npm run build</span>
+</span><span data-line="6">
+</span><span data-line="7"><span style="color:#C2C3C5;"># Preview the site locally</span>
+</span><span data-line="8"><span style="color:#24292EFF;">npm run preview</span>
+</span></code></pre>
+<p>
+  If the preview command doesn’t work, you can also run:
+</p>
+<pre data-code-block data-lang="bash"><code><span data-line="1"><span style="color:#24292EFF;">npx serve dist</span>
+</span></code></pre>]]></content>
+    <rights>© 2025 Matt Zhu ⸱ licensed under CC BY 4.0</rights>
   </entry>
 </feed>
