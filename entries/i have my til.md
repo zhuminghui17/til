@@ -9,7 +9,7 @@ The journey of a software engineering career has been incredibly rewarding. I've
 in my first year, learning new things from everywhere — online resources, ChatGPT, my boss's
 feedback — every day has been full of discoveries.
 
-I felt the need to document these little learnings, and thanks to [Lee Byron](https://github.com/leebyron/til) and [Kevin Jiang](https://github.com/kevinforrestconnors)'s template, I now have my own space to do just that.
+I felt the need to document these little learnings, and thanks to [Lee Byron](https://github.com/leebyron/til) and [Kevin Jiang](https://github.com/kevin51jiang/til)'s template, I now have my own space to do just that.
 
 I hope to post at least a few sentences every now and then. Cheers!
 
