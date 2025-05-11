@@ -13,6 +13,26 @@ or at least interesting.
 
 ---
 
+## Quick Start
+
+To run this site locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Build the site
+npm run build
+
+# Preview the site locally
+npm run preview
+```
+
+If the preview command doesn't work, you can also run:
+```bash
+npx serve dist
+```
+
 This repo is automatically maintained by a `til` script, found in `/bin/til`,
 symlinked into my `/.local/bin` directory. It relies on some local programs
 being available, such as `vim` and `fzf`.

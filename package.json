@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "./bin/til --build",
+    "preview": "npx serve dist",
     "install": "mkdir -p \"$HOME/.local/bin\"; ln -sf \"$PWD/bin/til\" \"$HOME/.local/bin/til\""
   },
   "prettier": {
