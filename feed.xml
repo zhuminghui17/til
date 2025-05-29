@@ -3,7 +3,7 @@
   <id>https://til.mattzhu.net/feed.xml</id>
   <link rel="self" type="application/atom+xml" href="https://til.mattzhu.net/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://til.mattzhu.net"/>
-  <updated>2025-05-11T03:17:54.000+00:00</updated>
+  <updated>2025-05-29T01:58:17.000+00:00</updated>
   <title>Matt Zhu / til</title>
   <subtitle>
     Things I've Learned: brief blurbs on miscellaneous matter.
@@ -15,6 +15,40 @@
   </author>
   <rights>© 2025 Matt Zhu ⸱ licensed under CC BY 4.0</rights>
   <generator uri="https://github.com/zhuminghui17/til">til</generator>
+  <entry>
+    <id>https://til.mattzhu.net/dockerignore/</id>
+    <link rel="alternate" type="text/html" href="https://til.mattzhu.net/dockerignore/"/>
+    <published>2025-05-28T21:59:02.000-04:00</published>
+    <updated>2025-05-29T01:58:17.000+00:00</updated>
+    <title>Don't ingore .dockerignore!</title>
+    <author>
+      <name>Matt Zhu</name>
+      <uri>https://til.mattzhu.net</uri>
+    </author>
+    <content type="html"><![CDATA[<p>
+  One easy yet impactful way to optimize your Docker image is to add a <code>.dockerignore</code> file.
+</p>
+<p>
+  Just like <code>.gitignore</code> for Git, <code>.dockerignore</code> tells Docker which files and folders to skip when building your image. This keeps your image smaller, builds faster, and avoids copying unnecessary files like local logs, node_modules, temporary build artifacts, docs, and data files.
+</p>
+<p>
+  For example:
+</p>
+<pre data-code-block data-lang="md"><code><span data-line="1"><span style="color:#6F42C1;"># .dockerignore</span>
+</span><span data-line="2"><span style="color:#24292EFF;">node_modules</span>
+</span><span data-line="3"><span style="color:#24292EFF;">dist</span>
+</span><span data-line="4"><span style="color:#24292EFF;">*.log</span>
+</span><span data-line="5"><span style="color:#24292EFF;">.DS_Store</span>
+</span><span data-line="6"><span style="color:#24292EFF;">.env</span>
+</span></code></pre>
+<p>
+  In one of my recent projects, adding a <code>.dockerignore</code> file reduced the image size from <code>~1.75GB</code> to <code>~850MB</code> — over <strong>50%</strong> smaller! Faster build time and lower bandwidth usage - saving time and cost!
+</p>
+<p>
+  This is very easy and straightforward, but it’s very interesting to see how many useless files I have packed into the docker image every single time!
+</p>]]></content>
+    <rights>© 2025 Matt Zhu ⸱ licensed under CC BY 4.0</rights>
+  </entry>
   <entry>
     <id>https://til.mattzhu.net/i-have-my-til/</id>
     <link rel="alternate" type="text/html" href="https://til.mattzhu.net/i-have-my-til/"/>
